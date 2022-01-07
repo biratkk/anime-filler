@@ -165,7 +165,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@biratkk](https://twitter.com/biratkk) - koiralabirat@gmail.com
+Birat Koirala - [@biratkk](https://twitter.com/biratkk) - koiralabirat@gmail.com
 
 [Project Link (Github)](https://github.com/biratkk/anime-filler)
 
