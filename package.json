@@ -1,0 +1,16 @@
+{
+  "name": "anime-filler",
+  "version": "1.0.0",
+  "description": "A library that scrapes AnimeFillerList to give you which episodes are fillers.",
+  "main": "anime-filler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Birat Koirala",
+  "license": "ISC",
+  "keywords": ["anime", "anime filler", "filler", "canon"],
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
