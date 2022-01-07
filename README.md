@@ -83,8 +83,6 @@
 
 I couldn't find a good library for obtaining anime fillers so I made one :)
 
-Use the `BLANK_README.md` to get started.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -131,7 +129,7 @@ Use the `BLANK_README.md` to get started.
 ## Usage
 
 A demonstration of the library can be seen here. This demonstration obtains the fillers of the anime 'Bleach'
-[![Usage Screen Shot][usage-screenshot1]]
+![Usage Screen Shot][usage-screenshot1]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -158,7 +156,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the ISC License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -170,6 +168,8 @@ Distributed under the ISC License. See `LICENSE.txt` for more information.
 Your Name - [@biratkk](https://twitter.com/biratkk) - koiralabirat@gmail.com
 
 [Project Link (Github)](https://github.com/biratkk/anime-filler)
+
+
 [Project Link (npm)](https://npmjs.com/package/anime-filler)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
