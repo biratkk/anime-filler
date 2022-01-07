@@ -2,7 +2,7 @@
   "name": "anime-filler",
   "version": "1.0.0",
   "description": "A library that scrapes AnimeFillerList to give you which episodes are fillers.",
-  "main": "anime-filler.js",
+  "main": "src/anime-filler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
