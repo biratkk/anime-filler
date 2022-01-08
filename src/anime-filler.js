@@ -196,6 +196,31 @@ class AnimeFiller{
                 });
         }
         return this.listOfAnimes[index].animeCanon;
+    }/**
+     * 
+     * @param {String} name of anime exactly as in database
+     * @returns the src of image from anime specified
+     */
+    async getAnimePictureSource(animeName){
+        const getSubLinkOf = animeName => {
+            let index;
+            return [this.listOfAnimes
+                    .filter((animeProps, ind) => {
+                        if(animeProps.animeName === animeName){
+                            index = ind;
+                            return true;
+                        }
+                    })[0]
+                    .animeLink, index];
+        }
+        const [subLink, index] = getSubLinkOf(animeName);
+        if(!this.listOfAnimes[index].animePictureSource){
+            await this.#getSelectorFunctionFromURL(subLink)
+            .then($ => {
+                this.listOfAnimes[index].animePictureSource = $('#div.Left > img').attr('src')
+            })
+        }
+        return this.listOfAnimes[index].animePictureSource;
     }
 }
 
