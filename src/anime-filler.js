@@ -217,7 +217,8 @@ class AnimeFiller{
         if(!this.listOfAnimes[index].animePictureSource){
             await this.#getSelectorFunctionFromURL(subLink)
             .then($ => {
-                this.listOfAnimes[index].animePictureSource = $('#div.Left > img').attr('src')
+                this.listOfAnimes[index].animePictureSource = $('div.Left > div.field.field-name-field-image.field-type-image.field-label-hidden > div > div > img')
+                                                                .attr('src')
             })
         }
         return this.listOfAnimes[index].animePictureSource;
