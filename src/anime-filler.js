@@ -197,9 +197,6 @@ class AnimeFiller{
         }
         return this.listOfAnimes[index].animeCanon;
     }
-    printData(data){
-        console.log(this);
-    }
 }
 
 module.exports = AnimeFiller
