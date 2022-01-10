@@ -215,7 +215,7 @@ class AnimeFiller{
         }
         const [subLink, index] = getSubLinkOf(animeName);
         if(!this.listOfAnimes[index].animePictureSource){
-            await this.#getSelectorFunctionFromURL(subLink)
+            await this.#getSelectorFunctionFromURL(linkToAnime(subLink))
             .then($ => {
                 this.listOfAnimes[index].animePictureSource = $('div.Left > div.field.field-name-field-image.field-type-image.field-label-hidden > div > div > img')
                                                                 .attr('src')
