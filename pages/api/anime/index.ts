@@ -20,5 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       res.status(500).json(e);
     }
   }
-  res.status(200).json(animes);
+  else{
+    res.status(200).json(animes);
+  }
 }
