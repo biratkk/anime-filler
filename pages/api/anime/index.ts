@@ -1,5 +1,3 @@
-import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
 import {
   getAllAnimes,
   initAllAnime,
@@ -7,10 +5,20 @@ import {
 } from "../../../helpers/scraper/AnimeList";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export const runtime = "edge"; // 'nodejs' is the default
+// export const runtime = "edge"; // 'nodejs' is the default
 
-export default async function handler(_: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await initAllAnime();
   const animes = getAllAnimes();
-  return NextResponse.json(animes, {status: 200});
+  const url = new URL(req.url || "", `http://${req.headers.host}`);
+  const animeName = url.searchParams.get("name");
+  if(animeName){
+    try{
+      res.status(200).json(Array.from(await retrieveAnimeFillersFor(animeName)))
+    }
+    catch(e){
+      res.status(500).json(e);
+    }
+  }
+  res.status(200).json(animes);
 }

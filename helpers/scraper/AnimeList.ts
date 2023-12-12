@@ -14,7 +14,7 @@ export const initAllAnime = async (): Promise<void> => {
         $(el1)
           .children()
           .map((i2, el2) => {
-            const animeName =  $(el2).children("a").text().toLowerCase();
+            const animeName =  $(el2).children("a").text();
             const animeLink =  $(el2).children("a").attr("href") || "Link not found";
             const anime:Anime = {
               name:animeName,
