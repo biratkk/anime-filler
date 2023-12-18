@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   headers: async () => [
     {
-      source: "/api/*",
+      source: "/api/:path*",
       headers: [
         { key: "Access-Control-Allow-Origin", value: "*" }, // replace this your actual origin
         {
